@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #5e5e5e;
   background-image: url(./assets/extendedbg.jpg );
   background-size: cover;
   background-color: "#282c34";
@@ -23,7 +23,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ffffff;
   text-decoration: inherit;
 }
 a:hover {
@@ -33,7 +33,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  place-items: normal center;
   min-width: 320px;
   min-height: 100vh;
   
@@ -76,19 +76,16 @@ button:focus-visible {
   }
 }
 
-
-/* Container that keeps header stuck at the top */
 .navContainer {
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   position: sticky;
   z-index: 999;
 }
 
-/* Frosted blur navigation bar */
-.bluredNav {
-  backdrop-filter: blur(8px);
+.blurredNav {
+  backdrop-filter: blur(6px);
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
   width: 100%;
@@ -96,7 +93,6 @@ button:focus-visible {
   justify-content: center;
 }
 
-/* Header inner layout */
 .headerContent {
   display: flex;
   justify-content: space-between;
@@ -106,14 +102,12 @@ button:focus-visible {
   color: white;
 }
 
-/* Left title */
 .headerTitle {
   font-size: 1.75rem;
   font-weight: 700;
   margin: 0;
 }
 
-/* Right link section */
 .navLinks {
   display: flex;
   align-items: center;
@@ -121,12 +115,10 @@ button:focus-visible {
   margin-right: 50px;
 }
 
-/* Optional: fancy stroked text */
 .textStroke {
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.35);
 }
 
-/* Optional: animated underline on hover */
 .hover-underline-animation {
   position: relative;
   cursor: pointer;

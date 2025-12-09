@@ -13,8 +13,8 @@ const Header = () => {
             <Link className="btn hover-underline-animation" to="skills" smooth offset={-70} duration={500}>Skills</Link>
             <Link className="btn hover-underline-animation" to="projects" smooth offset={-70} duration={500}>Projects</Link>
             <Link className="btn hover-underline-animation" to="contactMe" smooth offset={-70} duration={500}>Contact</Link>
-           
           </nav>
+          
         </div>
       </div>
     </header>
