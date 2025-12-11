@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --dblue: #14171c;
   --lblue: #344d6c;
@@ -162,4 +164,65 @@ button:focus-visible {
 }
 .link {
   text-decoration: none;
+}
+
+
+.bubble {
+  background-color: var(--dblue);
+  border-color: var(--lblue);
+  border-radius: 15px;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.bubbleTop {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  align-items: left;
+  justify-content: center;
+  width: max-content;
+}
+
+.bubbleBot {
+  /* border-top-right-radius: 0px; */
+  border-top-left-radius: 0px;
+  align-items: left;
+  justify-content: center;
+  width: max-content;
+}
+
+.titleDiv {
+  /* background-color: #e5e7f0; */
+  /* background-color: #27282c; */
+  /* background-color: #282c34; */
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding-left: 15vw;
+  font-size: calc(25px + 2vmin);
+  /* color: rgb(85, 85, 85); */
+  color: rgb(204, 204, 204);
+}
+
+.descDiv {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: flex-start;
+  padding-left: 15vw;
+  font-size: calc(5px + 2vmin);
+  /* color: rgb(85, 85, 85); */
+  color: rgb(204, 204, 204);
+}
+
+#landingPageBox {
+  height: 100vh;
+  width: 100%;
 }
