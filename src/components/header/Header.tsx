@@ -7,7 +7,7 @@ const Header = () => {
 
   return (
     <header className="navContainer">
-      <div className="blurredNav flex justify-between">
+      <div className="blurredNav w-full flex justify-between">
         <div className="headerContent textStroke">
 
           <h3 className="headerTitle">Lorenzo Ferri</h3>
@@ -30,12 +30,14 @@ const Header = () => {
           </button>
 
         </div>
+        
 
         <div 
-          className={`md:hidden absolute top-full right-0 left-0 bg-black/60 backdrop-blur-lg transition-all overflow-hidden justify-self-end rounded-md ${
+          className={`sm:hidden absolute top-full right-0 left-0 blurredNav transition-all overflow-hidden justify-self-end rounded-b-md ${
             isOpen ? "max-h-60 py-4 w-40" : "max-h-0 py-0 w-40"
           }`}
         >
+        
           <nav className="flex flex-col items-center pr-4 space-y-4">
             <Link onClick={() => setIsOpen(false)} className="btn" to="home" smooth offset={-70} duration={500}>Home</Link>
             <Link onClick={() => setIsOpen(false)} className="btn" to="skills" smooth offset={-70} duration={500}>Skills</Link>
