@@ -23,6 +23,10 @@ const ProjectShowcase: React.FC = () => {
       const matchesSearch = project.title.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesTech = selectedTech === '' || project.technologies.includes(selectedTech);
       return matchesSearch && matchesTech;
+    })
+    .sort((a, b) => {
+      if (a.featured === b.featured) return 0;
+      return a.featured ? -1 : 1;
     });
   }, [searchTerm, selectedTech]);
 
