@@ -35,7 +35,7 @@ const ProjectShowcase: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <div className="bubble bubbleTop border-4 textStroke" style={{ backgroundColor: '#14171c', borderColor: '#344d6c', color: '#cccccc' }}>
-            <h1 className="text-4xl font-bold">My Projects</h1>
+            <h1 className="textStroke">My Projects</h1>
           </div>
         </div>
 
