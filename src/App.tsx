@@ -10,7 +10,7 @@ function App() {
     <>
       <Helmet>
         <title>LFerri Portfolio</title>
-        <meta name="description" content="A Vite + React TypeScript starter project" />
+        <meta name="description" content="Lorenzo Ferri's developer portfolio" />
       </Helmet>
 
       <Header />
