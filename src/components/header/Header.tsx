@@ -1,5 +1,4 @@
 import '../../App.css';
-import { Link } from 'react-scroll';
 import { useState } from 'react';
 
 const Header = () => {
@@ -13,10 +12,10 @@ const Header = () => {
           <h3 className="headerTitle">Lorenzo Ferri</h3>
 
           <nav className="hidden navLinks sm:flex">
-            <Link className="btn hover-underline-animation" to="home" smooth offset={-70} duration={500}>Home</Link>
-            <Link className="btn hover-underline-animation" to="skills" smooth offset={-70} duration={500}>Skills</Link>
-            <Link className="btn hover-underline-animation" to="projects" smooth offset={-70} duration={500}>Projects</Link>
-            <Link className="btn hover-underline-animation" to="contactMe" smooth offset={-70} duration={500}>Contact</Link>
+            <a className="btn hover-underline-animation" href="#home">Home</a>
+            <a className="btn hover-underline-animation" href="#skills" >Skills</a>
+            <a className="btn hover-underline-animation" href="#projects">Projects</a>
+            <a className="btn hover-underline-animation" href="#contact">Contact</a>
           </nav>
 
           <button 
@@ -39,10 +38,10 @@ const Header = () => {
         >
         
           <nav className="flex flex-col items-center pr-4 space-y-4">
-            <Link onClick={() => setIsOpen(false)} className="btn" to="home" smooth offset={-70} duration={500}>Home</Link>
-            <Link onClick={() => setIsOpen(false)} className="btn" to="skills" smooth offset={-70} duration={500}>Skills</Link>
-            <Link onClick={() => setIsOpen(false)} className="btn" to="projects" smooth offset={-70} duration={500}>Projects</Link>
-            <Link onClick={() => setIsOpen(false)} className="btn" to="contactMe" smooth offset={-70} duration={500}>Contact</Link>
+            <a className="btn hover-underline-animation" href="#home">Home</a>
+            <a className="btn hover-underline-animation" href="#skills" >Skills</a>
+            <a className="btn hover-underline-animation" href="#projects">Projects</a>
+            <a className="btn hover-underline-animation" href="#contact">Contact</a>
           </nav>
         </div>
 

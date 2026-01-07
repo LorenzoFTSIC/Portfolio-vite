@@ -24,6 +24,7 @@ const ProjectShowcase: React.FC = () => {
       const matchesTech = selectedTech === '' || project.technologies.includes(selectedTech);
       return matchesSearch && matchesTech;
     })
+  // sort the results of the filters to make sure featured are first
     .sort((a, b) => {
       if (a.featured === b.featured) return 0;
       return a.featured ? -1 : 1;
@@ -34,7 +35,7 @@ const ProjectShowcase: React.FC = () => {
     <div className="min-h-screen p-8" style={{ paddingLeft: '15vw', paddingRight: '15vw' }}>
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
-          <div className="bubble bubbleTop border-4 textStroke" style={{ backgroundColor: '#14171c', borderColor: '#344d6c', color: '#cccccc' }}>
+          <div className="bubble bubbleTop border-4 textStroke scroll-mt-24" id="projects" style={{ backgroundColor: '#14171c', borderColor: '#344d6c', color: '#cccccc' }}>
             <h1 className="textStroke">My Projects</h1>
           </div>
         </div>
@@ -85,7 +86,7 @@ const ProjectShowcase: React.FC = () => {
             {filteredProjects.map((project: Project) => (
               <div
                 key={project.id}
-                className="bubble border-4 overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                className="bubble border-4 overflow-hidden shadow-lg hover:shadow-l transition-shadow duration-300"
                 style={{ backgroundColor: '#14171c', borderColor: '#344d6c' }}
               >
                 {/* project image */}

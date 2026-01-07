@@ -1,11 +1,12 @@
 import '../../App.css';
 import Projects from "./Projects"
+import Contact from "./Contact"
 
-const Header = () => {
+const Home = () => {
   return (
      <main>
         <div id="landingPageBox">
-            <div className="titleDiv textStroke">
+            <div className="titleDiv textStroke scroll-mt-24" id="home">
                 <div className="border-4 bubble bubbleTop">
                     <h2>
                         Hello World,
@@ -24,8 +25,9 @@ const Header = () => {
             </div>   
         </div>
         <Projects ></Projects>
+        <Contact ></Contact>
     </main>
   );
 };
   
-export default Header;
+export default Home;
