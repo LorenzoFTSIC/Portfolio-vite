@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header className="navContainer">
-      <div className="blurredNav w-full flex justify-between">
+      <div className="blurredNav flex justify-between">
         <div className="headerContent textStroke">
 
           <h3 className="headerTitle">Lorenzo Ferri</h3>
